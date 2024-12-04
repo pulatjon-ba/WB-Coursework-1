@@ -1,1 +1,4 @@
-# WB-Coursework-1
+# WB_CW1_00017589
+The link to website: 
+
+The project is basically made for a company I am working right now. I didnt add full information about the company, but briefly, and clear. I have used HTML, CSS and Javascript. I validated html and css as said in coursework description. Coming to website itself, when user enter website, s/he faces home page where there can be found some information about the company and structure of website. Then About us page, where I wrote some facts and stats of a company. I also included services company can provide for clients, with faqs section in bottom part. Clients can know about the leaders of the company from team page, where main figures are mentioned and quoted. If in case client has questions, they can head over to contact us page and send request via email. Btw, I validated form through JS, so information user enters is valid. It is very simple and user friendly web page. Website can work in any device, since I used responsive design. I tried to make pages as creative as I can, but for now, these are all. Thank you.
