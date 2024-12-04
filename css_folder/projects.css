@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+header {
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.hamburger {
+    display: none; /* Hide hamburger icon by default */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: #007acc;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Show hamburger icon on smaller screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #f4f4f4;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show navigation links when active */
+    }
+}
+
+/* Projects Section */
+.projects {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.project-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+    color: #0044cc;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #f4f4f4;
+    border-top: 2px solid #ccc;
+    margin-top: 20px;
+}
+
+/* Responsive Design Fixes */
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%; /* Ensure each project item takes up full width on smaller screens */
+        margin-bottom: 20px; /* Add spacing between stacked items */
+    }
+
+    footer {
+        position: static; /* Prevent footer from overlapping on smaller screens */
+        margin-top: 10px; /* Adjust footer spacing */
+    }
+}
